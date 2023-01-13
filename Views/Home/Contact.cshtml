@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    
+}
+
+<h2>Contact</h2>
+
+@{ ViewBag.Description = "This is the Contact Page";}
+@{
+    ViewBag.ListTitle = "Contact Details";
+    ViewBag.Items = new List<string> { "corporate office", "support team", "marketing team" };
+    Html.RenderPartial("ListPartialView");
+}
+
+@section SideBarOptions
+{
+    <a class="list-group-item" href="#" style="background-color:transparent;">Admin Contact</a>
+    <a class="list-group-item" href="#" style="background-color:transparent;">Agent Contact</a>
+    <a class="list-group-item" href="#" style="background-color:transparent;">Customer Contact</a>
+
+}
